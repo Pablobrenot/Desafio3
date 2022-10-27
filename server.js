@@ -25,3 +25,7 @@ app.get("/productos", async (_req, res) => {
       res.status(404).send({ data: null, error: `Archivo inexistente` });
     }
   });
+  
+  app.listen(PORT, () => {
+    console.log(`Example app listening on port ${PORT}`)
+  })
